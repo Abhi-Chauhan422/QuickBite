@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickBite Admin - Reports</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Quick<span>Bite</span> Admin</div>
+</header>
+
+<div class="admin-wrap">
+  <div class="sidebar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="manage-menu.html">Manage Menu</a>
+    <a href="manage-orders.html">Manage Orders</a>
+    <a href="manage-customers.html">Manage Customers</a>
+    <a href="reports.html" class="active">Reports</a>
+    <a href="#" onclick="adminLogout(); return false;">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <h2>Reports</h2>
+
+    <div class="toolbar">
+      <label for="fromDate">From</label>
+      <input type="date" id="fromDate">
+      <label for="toDate">To</label>
+      <input type="date" id="toDate">
+      <button class="btn btn-small" id="applyBtn">Apply</button>
+      <button class="btn btn-small btn-grey" id="resetBtn">Reset</button>
+    </div>
+
+    <div class="stat-cards">
+      <div class="stat-card"><div class="num" id="repSales">Rs.0</div><div class="label">Total Sales</div></div>
+      <div class="stat-card"><div class="num" id="repOrders">0</div><div class="label">Orders</div></div>
+      <div class="stat-card"><div class="num" id="repBest">-</div><div class="label">Best Selling Item</div></div>
+    </div>
+
+    <h3 style="margin-bottom:12px;">Sales by Item</h3>
+    <table id="reportTable"></table>
+  </div>
+</div>
+
+<script src="../data.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

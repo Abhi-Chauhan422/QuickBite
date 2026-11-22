@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickBite - Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Quick<span>Bite</span></div>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="cart.html" id="cartLink">Cart</a></li>
+      <li><a href="track-order.html">Track Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login-register.html" id="authLink">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section">
+  <h2>Full Menu</h2>
+  <p class="sub">Browse all dishes by category</p>
+
+  <div class="filter-bar">
+    <input type="text" id="searchBox" placeholder="Search dishes...">
+    <select id="categoryBox">
+      <option value="All">All Categories</option>
+      <option value="Starters">Starters</option>
+      <option value="Main Course">Main Course</option>
+      <option value="Desserts">Desserts</option>
+      <option value="Beverages">Beverages</option>
+    </select>
+  </div>
+
+  <div class="grid" id="menuGrid"></div>
+</section>
+
+<footer>
+  QuickBite &mdash; Your cravings, one click away &middot; &copy; 2026
+</footer>
+
+<script src="../data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

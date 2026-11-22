@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickBite - Login / Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Quick<span>Bite</span></div>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="cart.html" id="cartLink">Cart</a></li>
+      <li><a href="track-order.html">Track Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login-register.html" id="authLink" class="active">Login</a></li>
+      <li><a href="/AdminSide/admin-login.html" id="authLink1">Admin Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section">
+  <h2>Account</h2>
+  <p class="sub">Login or create a new account</p>
+
+  <div class="two-col">
+    <div>
+      <h3>Login</h3>
+      <form class="form-box" id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="you@example.com">
+          <span class="error" id="loginEmailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password">
+          <span class="error" id="loginPasswordError"></span>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <p class="muted">Demo account: rahul@mail.com / demo123</p>
+      </form>
+    </div>
+
+    <div>
+      <h3>Register</h3>
+      <form class="form-box" id="registerForm" novalidate>
+        <div class="form-group">
+          <label for="regName">Full Name</label>
+          <input type="text" id="regName" placeholder="Your name">
+          <span class="error" id="regNameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="regEmail">Email</label>
+          <input type="email" id="regEmail" placeholder="you@example.com">
+          <span class="error" id="regEmailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="regPhone">Phone Number</label>
+          <input type="tel" id="regPhone" placeholder="10-digit number">
+          <span class="error" id="regPhoneError"></span>
+        </div>
+        <div class="form-group">
+          <label for="regPassword">Password</label>
+          <input type="password" id="regPassword" placeholder="Letters and numbers, min 6">
+          <span class="error" id="regPasswordError"></span>
+        </div>
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  QuickBite &mdash; Your cravings, one click away &middot; &copy; 2026
+</footer>
+
+<script src="../data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

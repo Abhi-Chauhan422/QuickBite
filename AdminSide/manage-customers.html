@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickBite Admin - Manage Customers</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Quick<span>Bite</span> Admin</div>
+</header>
+
+<div class="admin-wrap">
+  <div class="sidebar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="manage-menu.html">Manage Menu</a>
+    <a href="manage-orders.html">Manage Orders</a>
+    <a href="manage-customers.html" class="active">Manage Customers</a>
+    <a href="reports.html">Reports</a>
+    <a href="#" onclick="adminLogout(); return false;">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <h2>Manage Customers</h2>
+    <input type="text" id="customerSearch" class="search-input" placeholder="Search by name or email">
+    <table id="customersTable"></table>
+  </div>
+</div>
+
+<script src="../data.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

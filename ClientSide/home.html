@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickBite - Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Quick<span>Bite</span></div>
+  <nav>
+    <ul>
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="cart.html" id="cartLink">Cart</a></li>
+      <li><a href="track-order.html">Track Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login-register.html" id="authLink">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Your cravings, one click away</h1>
+  <p>Order delicious, freshly cooked meals delivered straight to your door.</p>
+  <a href="menu.html" class="btn">See the Menu</a>
+</section>
+
+<section class="section">
+  <h2>Categories</h2>
+  <p class="sub">Pick a mood, we'll handle the rest</p>
+  <div class="grid">
+    <a class="card" href="menu.html?category=Starters">
+      <div class="card-body"><h4>Starters</h4></div>
+    </a>
+    <a class="card" href="menu.html?category=Main Course">
+      <div class="card-body"><h4>Main Course</h4></div>
+    </a>
+    <a class="card" href="menu.html?category=Desserts">
+      <div class="card-body"><h4>Desserts</h4></div>
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Popular Right Now</h2>
+  <p class="sub">Customer favourites this week</p>
+  <div class="grid" id="featuredGrid"></div>
+</section>
+
+<footer>
+  QuickBite &mdash; Your cravings, one click away &middot; &copy; 2026
+</footer>
+
+<script src="../data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
